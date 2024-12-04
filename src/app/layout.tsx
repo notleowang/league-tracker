@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Providers from "@/lib/providers";
 
 export const metadata: Metadata = {
 	title: "League Tracker",
@@ -13,10 +14,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={``}
-			>
-				{children}
+			<body>
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);
