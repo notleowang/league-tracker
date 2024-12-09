@@ -19,7 +19,7 @@ export default function SearchBar() {
 
         if (!isValidInput(gameName, tagLine)) return;
 
-        router.push(`/profile?gameName=${toSlug(gameName)}&tagLine=${toSlug(tagLine)}`);
+        router.push(`/user?gameName=${toSlug(gameName)}&tagLine=${toSlug(tagLine)}`);
     }
 
     return (
