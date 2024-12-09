@@ -99,7 +99,6 @@ export default function ProfilePage() {
     const flexData = leagueData?.find((entry: LeagueEntry) => entry.queueType === 'RANKED_FLEX_SR');
 
     return (
-        // <Profile />
         <>
             <div className="canvas">
                 <div className="grid grid-cols-7 grid-rows-3 divide-x-2 divide-y-2 divide-foreground border-b-2">
